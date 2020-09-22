@@ -1,22 +1,30 @@
 <template>
   <div id="app">
-    <Nav class="mb-6" />
-    <HelloWorld msg="Welcome to Your Vue.js App" class="text-center" />
+    <IpInput />
+    <!-- <IpMap /> -->
+    <!-- <Test /> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Nav from './components/Nav.vue'
+import IpInput from './components/IpInput.vue'
+// import IpMap from './components/IpMap.vue'
+// import Test from './components/Test.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Nav
+    IpInput,
+    // IpMap
+    // Test
   }
 }
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+#app {
+  font-family: 'Rubik', sans-serif;
+}
 </style>
