@@ -14,9 +14,8 @@
         :attribution="attribution"
       ></l-tile-layer>
       <l-marker
-        :lat-lng="[lat, lng]"
-      >
-      </l-marker>
+        :lat-lng="center"
+        :icon="icon" />
     </l-map>
   </div>
 </template>
@@ -42,6 +41,7 @@ export default {
         iconSize: [32, 37],
         iconAnchor: [16, 37]
       }),
+      path: "../images/icon-location.svg",
       center: {lat: null, lng: null},
       zoom: 15,
       mapOptions: {
