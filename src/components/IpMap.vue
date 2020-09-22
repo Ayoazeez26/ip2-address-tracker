@@ -13,15 +13,13 @@
         :url="url"
         :attribution="attribution"
       ></l-tile-layer>
-      <l-marker
-        :lat-lng="center"
-        :icon="icon" />
+      <l-marker :lat-lng="center" />
     </l-map>
   </div>
 </template>
 
 <script>
-import { icon } from "leaflet";
+// import { icon } from "leaflet";
 import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
 
 export default {
@@ -36,11 +34,6 @@ export default {
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution: 
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      icon: icon({
-        iconUrl: "../images/icon-location.svg",
-        iconSize: [32, 37],
-        iconAnchor: [16, 37]
-      }),
       path: "../images/icon-location.svg",
       center: {lat: null, lng: null},
       zoom: 15,
